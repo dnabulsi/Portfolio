@@ -1,0 +1,181 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Dana Nabulsi | Projects</title>
+{% endblock %}
+
+{% block content %}
+<section class="c-hero">
+    <div class="c-hero__box">
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title right">Blog Web App</h1>
+                    <p class="projects-subtext right">A full-feature blog using Django, SQLite3, and Python, as well as HTML and CSS. You can register, log in, create a post, change your username / password / profile picture, look at blog posts and announcements, create / update / delete posts, view all posts and members, etc. As a staff member, you are able to create to create / update / delete announcements.</p>
+                    <div class="right">
+                        <div class="language-button-holder python">
+                            Python
+                        </div>
+                        <div class="language-button-holder django">
+                            Django
+                        </div>
+                        <div class="language-button-holder sqlite">
+                            SQLite3
+                        </div>
+                        <div class="language-button-holder css">
+                            CSS
+                        </div>
+                        <div class="language-button-holder html-text">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/Blog">Check out the code at its GitHub repository!</a>
+                    </div>
+                </div>
+                <div class="projects-flex-block">
+                   <div class="projects-wrapper">
+                        <img src="{% static 'media/blog.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block">
+                    <div class="projects-wrapper">
+                        <img src="{% static 'media/trivia.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title">Trivia Game Web App</h1>
+                    <p class="projects-subtext" style="text-align: left;">A full feature Trivia Web App using open API, Flask framework, SQLite3 database, all in Python, CSS, HTML, and JavaScript. You are able to register, log in, customize your game difficulty and category, play a timed trivia game, and view all highscores.</p>
+                    <div class="language-button-holder python">
+                        Python
+                    </div>
+                    <div class="language-button-holder js">
+                        JavaScript
+                    </div>
+                    <div class="language-button-holder flask">
+                        Flask
+                    </div>
+                    <div class="language-button-holder sqlite">
+                        SQLite3
+                    </div>
+                    <div class="language-button-holder css">
+                        CSS
+                    </div>
+                    <div class="language-button-holder html-text">
+                        HTML
+                    </div>
+                    <div>
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/Trivia-Web-App">Check out the code at its GitHub repository!</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title right">RSS Parser</h1>
+                    <p class="projects-subtext right">This web app uses Flask and Python to parse an XML file and display results as a table with Google Maps embed.</p>
+                    <div class="right">
+                        <div class="language-button-holder python">
+                            Python
+                        </div>
+                        <div class="language-button-holder flask">
+                            Flask
+                        </div>
+                        <div class="language-button-holder css">
+                            CSS
+                        </div>
+                        <div class="language-button-holder html-text">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/RSS-Parser">Check out the code at its GitHub repository!</a>
+                    </div>
+                </div>
+                <div class="projects-flex-block">
+                    <div class="projects-wrapper">
+                        <img src="{% static 'media/rssparser.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block">
+                    <div class="projects-wrapper">
+                        <img src="{% static 'media/blackjack.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title">Blackjack</h1>
+                    <p class="projects-subtext" style="text-align: left;">A Python terminal window Blackjack game. You can purchase chips, play a round, sell your chips, check and add to your account balance, etc.</p>
+                    <div class="language-button-holder python">
+                        Python
+                    </div>
+                    <div class="left">
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/Blackjack">Check out the code at its GitHub repository!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title right">The War</h1>
+                    <p class="projects-subtext right">A Python terminal window War game.</p>
+                    <div class="right">
+                        <div class="language-button-holder python">
+                            Python
+                        </div>
+                    </div>
+                    <div class="right">
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/War">Check out the code its my GitHub repository!</a>
+                    </div>
+                </div>
+                <div class="projects-flex-block">
+                    <div class="projects-wrapper">
+                        <img src="{% static 'media/thewar.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects-wrapper"> 
+            <div class="projects-holder js-bounce-in-home">
+                <div class="projects-flex-block">
+                    <div class="projects-wrapper">
+                        <img src="{% static 'media/tictactoe.gif' %}" width="100%" height="380px" style="border-radius:6px;">
+                    </div>
+                </div>
+                <div class="projects-flex-block text-flex-block">
+                    <h1 class="projects-title">Tic Tac Toe</h1>
+                    <p class="projects-subtext" style="text-align: left;">A Python terminal window Tic Tac Toe game.</p>
+                    <div class="language-button-holder python">
+                        Python
+                    </div>
+                    <div class="left">
+                        <a class="projects-github-link" href="https://github.com/dnabulsi/Tic-Tac-Toe">Check out the code at its GitHub repository!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

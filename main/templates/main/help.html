@@ -1,0 +1,49 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Dana Nabulsi | Projects</title>
+{% endblock %}
+
+{% block content %}
+<section class="c-hero">
+    <h1 class="projects-title" style="text-align:center;color:white;padding-top:30px">Some projects I've built</h1>
+    <div class="c-hero__box">
+        <div class="projects-flex-block js-bounce-in-home">
+            <div class="projects-wrapper"> 
+                
+                <div class="projects-wrapper" style="padding-bottom:25px;"> 
+                    <div class="projects-holder">
+                        <div class="projects-flex-block text-flex-block">
+                            <h1 class="projects-title right">Blog Web App</h1>
+                            <p class="projects-subtext right">A full-feature blog using Django, SQLite3, and Python, as well as HTML and CSS. You can register, log in, create a post, change your username / password / profile picture, look at blog posts and announcements, create / update / delete posts, view all posts and members, etc. As a staff member, you are able to create to create / update / delete announcements.</p>
+                            <div class="right">
+                                <div>
+                                    Python
+                                </div>
+                                <div class="language-button-holder django">
+                                    Django
+                                </div>
+                                <div class="language-button-holder sqlite">
+                                    SQLite3
+                                </div>
+                                <div class="language-button-holder css">
+                                    CSS
+                                </div>
+                                <div class="language-button-holder html">
+                                    HTML
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects-flex-block">
+                           <div class="projects-wrapper">
+                                <img src="{% static 'media/tictactoe.gif' %}" width="500px" height="300px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
