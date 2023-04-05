@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Bogart';
+  src: URL('bogart.ttf') format('truetype');
+}
+
+* {
+    font-family: Bogart;
+}
+
 .emoji {
   -webkit-text-fill-color: initial!important;
   display: inline-block;
@@ -100,7 +109,7 @@ body, html {
   min-width: 0;
 }
 
-.c-link, a {
+.link, a {
   background-color: transparent;
   box-sizing: border-box;
   cursor: pointer;
@@ -192,7 +201,6 @@ html {
 }
 
 .c-hero__title {
-  font-family: Bogart,Helvetica,Arial,sans-serif;
   font-size: 70px;
   letter-spacing: -1.5px;
   line-height: 110%;
@@ -210,7 +218,6 @@ html {
 
 
 h1, h2, h3, h4, h5 {
-  font-family: Bogart,Helvetica,Arial,sans-serif;
   font-weight: 500;
 }
 
@@ -265,8 +272,7 @@ h1, h2, h3, h4, h5 {
   100% { transform: rotate( 0.0deg) }
 }
 
-.contacts-title {
-  font-family: Bogart;
+.page-title {
   text-align: center;
   font-weight: bold;
   margin: 1em 0 0;
@@ -274,7 +280,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
   transition: all .2s ease-in-out;
   color: #fff;
-  background: linear-gradient(271deg,#7d94f3 28%, #b07cfa 45%, #ee98f3 75%,#fcd88c 92%);
+  background: #b07cfa;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.5px;
@@ -286,17 +292,16 @@ h1, h2, h3, h4, h5 {
   line-height: 1.5;
   transition: all .2s ease-in-out;
   color: #fff;
-  letter-spacing: 0.5px
+  letter-spacing: 0.5px;
+  font-size: 25px;
 }
 
 .contacts-left {
   text-align: right;
-  font-size: 25px;
 }
 
 .contacts-right {
   text-align: left;
-  font-size: 25px;
 }
 
 table {
@@ -315,18 +320,6 @@ td {
   padding-bottom: 100px;
 }
 
-.resume-title {
-  font-family: Bogart;
-  text-align: center;
-  font-weight: bold;
-  margin: 1em 0 0;
-  font-size: 30px;
-  line-height: 1.5;
-  transition: all .2s ease-in-out;
-  color: #fff;
-  letter-spacing: 0.5px;
-  padding-bottom: 50px;
-}
 
 .language-button-holder {
   width: fit-content;
@@ -370,6 +363,26 @@ td {
   background-color:rgb(227,215,76);
 }
 
+.dotnet {
+  background-color:rgb(74,44,198);
+}
+
+.csharp {
+  background-color:rgb(91,14,118);
+}
+
+.mssql {
+  background-color:rgb(158,158,159);
+}
+
+.angular {
+  background-color:rgb(189,40,53);
+}
+
+.ts {
+  background-color:rgb(65,112,182);
+}
+
 .projects-holder {
   width: fit-content;
   height: fit-content;
@@ -386,14 +399,17 @@ td {
   padding-bottom:25px;
 }
 
-.projects-title {
-  font-family: Bogart,Helvetica,Arial,sans-serif;
+.pages-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0 0;
+  line-height: 1.5;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  letter-spacing: 0.5px;
+  padding-bottom: 50px;
   font-size: 70px;
   letter-spacing: -1.5px;
-  line-height: 110%;
-  margin: 0;
-  transition: all .2s ease-in-out;
-  color:rgb(255, 188, 63);
 }
 
 .projects-flex-block {
@@ -499,4 +515,10 @@ td {
     max-width: 700;
     display:flex;
   }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
