@@ -1,6 +1,2 @@
 .vscode/
-target/
-dependency-reduced-pom.xml
-*.sh
 .DS_Store
-.fake
