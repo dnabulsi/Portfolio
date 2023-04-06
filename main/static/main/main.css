@@ -4,130 +4,73 @@
 }
 
 * {
-    font-family: Bogart;
+  font-family: Bogart;
 }
 
-.emoji {
-  -webkit-text-fill-color: initial!important;
-  display: inline-block;
-}
-
-.emoji-top {
-  -webkit-text-fill-color: initial!important;
-  font-size: 40px;
-  text-align: center;
-}
-
-.s-nav {
+header {
   position: fixed;
   width: 100%;
   z-index: 1040;
 }
 
-.c-nav {
+nav {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-color:rgb(20,20,20);
+  background-color: rgb(20, 20, 20);
 }
 
-.c-nav-list {
+.nav-list {
   margin: 0 auto;
   list-style-type: none;
   padding: 0;
   overflow: hidden;
   max-width: 90%;
-}
-
-.c-nav-list__link--logo {
-  position: absolute;
-  left: 50%;
-  top: 2px;
-  transform: translate3d(-50%,0,0);
-  display: none;
-  transition: all .2s cubic-bezier(.175,.885,.32,1.275);
-}
-
-.o-flexy--top {
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
-.o-flexy {
-  box-sizing: border-box;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
-dl, ol, ul {
-  margin-top: 0;
+.right-link-navbar {
+  margin-left: auto !important;
 }
 
-address, dl, ol, ul {
-  margin-bottom: 1rem;
-}
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-body, html {
-  font-family: 'Clarika Geometric',Helvetica,Arial,sans-serif;
-  overscroll-behavior: none;
-  overflow-x: auto;
-
-}
-
-.u-mrg-l-auto {
-  margin-left: auto!important;
-}
-
-.o-flexy__item {
+.nav-list-item {
+  text-decoration: none;
   box-sizing: border-box;
   max-width: 100%;
   min-width: 0;
 }
 
-.link, a {
+.navbar-link {
+  padding: 1.5em 0.75em;
+  display: block;
+  color: #ffffff;
+  font-size: 1.1em;
+  transition: color .2s linear;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  color: white;
+}body,
+html {
+  font-family: 'Clarika Geometric', Helvetica, Arial, sans-serif;
+  overscroll-behavior: none;
+  overflow-x: auto;
+  background-color: rgb(20, 20, 20);
+
+}
+
+.link,
+a {
   background-color: transparent;
   box-sizing: border-box;
   cursor: pointer;
   text-decoration: none;
   transition: none;
-}
-
-::marker {
-  unicode-bidi: isolate;
-  font-variant-numeric: tabular-nums;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
-}
-
-*, :after, :before {
-  box-sizing: inherit;
 }
 
 html {
@@ -140,31 +83,12 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-.c-nav-list__item+.c-nav-list__item {
+.left-margin {
   margin-left: 10px;
-  text-decoration: none;
 }
 
-.c-nav-list__link {
-  padding: 1.5em 0.75em;
-  display: block;
-  color: #ffffff;
-  font-size: 1.1em;
-  transition: color .2s linear;
-  position: relative;
-  letter-spacing: 0.5px;
-}
 
-.c-nav-list__link:hover {
-  text-decoration: none;
-  color:white;
-}
-
-.homepage {
-  background-color:rgb(20,20,20);
-}
-
-.c-hero {
+.section-div {
   overflow: auto;
   position: relative;
   z-index: 1000;
@@ -172,20 +96,20 @@ html {
 }
 
 .flex-display {
-  display: flex!important;
+  display: flex !important;
 }
 
-.c-hero__box {
+.subsection-div {
   padding-top: 50px;
   max-width: 90%;
   margin: 0 auto;
   display: flex;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
   width: 100% !important;
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
-.o-flexy__block {
+.div-container {
   box-sizing: border-box;
   max-width: 100%;
   min-width: 0;
@@ -196,28 +120,24 @@ html {
   -webkit-flex: 1;
 }
 
-.js-bounce-in, .js-bounce-in-home {
-  opacity: 0;
-}
-
-.c-hero__title {
+.title {
   font-size: 70px;
   letter-spacing: -1.5px;
   line-height: 110%;
   margin: 0;
   transition: all .2s ease-in-out;
   text-align: left;
+  color: #fff;
+  background: linear-gradient(271deg, #7d94f3 28%, #b07cfa 45%, #ee98f3 75%, #fcd88c 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.homepage .c-hero__title {
-    color: #fff;
-    background: linear-gradient(271deg,#7d94f3 28%, #b07cfa 45%, #ee98f3 75%,#fcd88c 92%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
 }
 
@@ -227,7 +147,7 @@ h1, h2, h3, h4, h5 {
   margin: auto 0;
 }
 
-.c-hero__sub {
+.title-subtext {
   text-align: center;
   margin: 1em 0 0;
   font-size: 1.1em;
@@ -237,7 +157,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 0.5px
 }
 
-.c-hero__eye-holder {
+.portrait-container {
   width: fit-content;
   height: fit-content;
   border-radius: 20px;
@@ -246,31 +166,6 @@ h1, h2, h3, h4, h5 {
   overflow: auto;
 }
 
-.c-hero__eye {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%,-50%,0) scale3d(.8,.8,.8);
-}
-
-.wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  -webkit-text-fill-color: initial;
-}
-
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
-}
 
 .page-title {
   text-align: center;
@@ -305,9 +200,9 @@ h1, h2, h3, h4, h5 {
 }
 
 table {
-  margin-left:auto;
-  margin-right:auto;
-  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 td {
@@ -320,83 +215,82 @@ td {
   padding-bottom: 100px;
 }
 
-
 .language-button-holder {
   width: fit-content;
   height: fit-content;
   border-radius: 20px;
   position: relative;
   overflow: auto;
-  margin:0;
-  margin-top:10px;
-  padding:3px;
-  display:inline-block;
-  margin-right:5px;
-  align-items:center;
+  margin: 0;
+  margin-top: 10px;
+  padding: 3px;
+  display: inline-block;
+  margin-right: 5px;
+  align-items: center;
 }
 
 .python {
-  background-color:rgb(69,113,161);
+  background-color: rgb(69, 113, 161);
 }
 
 .css {
-  background-color: rgb(82,62,120);
+  background-color: rgb(82, 62, 120);
 }
 
 .html-text {
-  background-color: rgb(210,87,53);
+  background-color: rgb(210, 87, 53);
 }
 
 .sqlite {
-  background-color: rgb(22,59,85);
+  background-color: rgb(22, 59, 85);
 }
 
 .django {
-  background-color:rgb(19,43,31);
+  background-color: rgb(19, 43, 31);
 }
 
 .flask {
-  background-color:black;
+  background-color: black;
 }
 
 .js {
-  background-color:rgb(227,215,76);
+  background-color: rgb(227, 215, 76);
 }
 
 .dotnet {
-  background-color:rgb(74,44,198);
+  background-color: rgb(74, 44, 198);
 }
 
 .csharp {
-  background-color:rgb(91,14,118);
+  background-color: rgb(91, 14, 118);
 }
 
 .mssql {
-  background-color:rgb(158,158,159);
+  background-color: rgb(158, 158, 159);
 }
 
 .angular {
-  background-color:rgb(189,40,53);
+  background-color: rgb(189, 40, 53);
 }
 
 .ts {
-  background-color:rgb(65,112,182);
+  background-color: rgb(65, 112, 182);
 }
 
 .projects-holder {
   width: fit-content;
   height: fit-content;
   border-radius: 20px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   position: relative;
   overflow: auto;
-  width:100%;
-  color:white;
-  text-align:left;
-  display:flex;
-  align-items:center;
-  padding:10px;
-  padding-bottom:25px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 25px;
 }
 
 .pages-title {
@@ -420,10 +314,10 @@ td {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   -webkit-flex: 1;
-  padding:20px
+  padding: 20px
 }
 
-.img-flex-block{
+.img-flex-block {
   width: 9900px;
   height: 500px;
 }
@@ -450,17 +344,14 @@ td {
   min-width: 0;
   -ms-flex-preferred-size: auto;
   -webkit-flex: 1;
-  padding:20px
+  padding: 20px
 }
 
-.projects-github-link {
-  font-weight:bold;
-  color:white;
-}
-
+.projects-github-link,
 .projects-github-link:hover {
-  text-decoration:none;
-  color:white;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .left {
@@ -472,8 +363,8 @@ td {
 }
 
 .gif {
-  width:fit-content;
-  height:fit-content;
+  width: fit-content;
+  height: fit-content;
   border-radius: 5px;
   padding: 20px;
 }
@@ -482,21 +373,21 @@ td {
   width: 600px;
   height: 420px;
   border-radius: 20px;
-  margin-bottom:50px;
+  margin-bottom: 50px;
   position: relative;
   overflow: auto;
-  width:100%;
-  height:fit-content;
-  color:white;
-  text-align:left;
-  display:flex;
-  align-items:center;
-  padding:20px;
+  width: 100%;
+  height: fit-content;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .text-flex-block {
-  background-color:rgb(47, 47, 47);
-  border-radius:20px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 20px;
 }
 
 @media (max-width: 1120px) {
@@ -508,12 +399,12 @@ td {
 @media (max-width: 950px) {
   .projects-holder {
     flex-direction: column;
-    display:block;
+    display: block;
   }
 
   .gif {
     max-width: 700;
-    display:flex;
+    display: flex;
   }
 }
 
@@ -521,4 +412,51 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.emoji {
+  -webkit-text-fill-color: initial !important;
+  display: inline-block;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  -webkit-text-fill-color: initial;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
 }

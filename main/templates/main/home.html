@@ -1,26 +1,18 @@
-{% extends 'main/layout.html' %}
-{% load static %}
-
-{% block head %}
-<title>Dana Nabulsi | Home</title>
-{% endblock %}
-
-{% block content %}
-<section class="c-hero">
-    <div class="c-hero__box">
-        <div class="o-flexy__block js-bounce-in-home" style="opacity: 1; transform: translateY(0px);">
+<section class="section-div">
+    <div class="subsection-div">
+        <div class="div-container" style="opacity: 1; transform: translateY(0px);">
             <div class="c-hero__eye-wrap">
-                <div class="c-hero__eye-holder">
+                <div class="portrait-container">
                     <img src="{% static 'media/portrait.png' %}" width="500px" height="500px">
                 </div>
             </div>
         </div>
-        <div class="o-flexy__block js-bounce-in-home" style="opacity: 1; transform: translateY(0px);padding-top:50px">
-            <h1 class="c-hero__title">Hi! I’m Dana. <span class="emoji wave">👋🏻</span></h1>
-            <h1 class="c-hero__title">A Junior Software Developer.</h1>
-            <p class="c-hero__sub" style="text-align: left;">I'm into web and software development, with some front-end
+        <div class="div-container" style="opacity: 1; transform: translateY(0px);padding-top:50px">
+            <h1 class="title">Hi! I’m Dana. <span class="emoji wave">👋🏻</span></h1>
+            <h1 class="title">A Junior Software Developer.</h1>
+            <p class="title-subtext" style="text-align: left;">I'm into web and software development, with some front-end
                 coding and design sprinkled in.</p>
-            <p class="c-hero__sub" style="text-align: left;"><a href='projects' class='projects-github-link'>I've
+            <p class="title-subtext" style="text-align: left;"><a href='projects' class='projects-github-link'>I've
                     developed a lot of projects. Check them out!</a></p>
         </div>
     </div>

@@ -13,32 +13,32 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'media/favicon.ico' %}">
 </head>
 
-<body class="homepage">
-    <header class="s-nav">
-        <nav class="c-nav">
-            <ul class="c-nav-list o-flexy o-flexy--top">
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="{% url 'home' %}"><span>home</span></a>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a class="navbar-link" href="{% url 'home' %}"><span>home</span></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="{% url 'projects' %}"><span>projects</span></a>
+                <li class="nav-list-item left-margin">
+                    <a class="navbar-link" href="{% url 'projects' %}"><span>projects</span></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="{% url 'contact' %}"><span>contact</span></a>
+                <li class="nav-list-item left-margin">
+                    <a class="navbar-link" href="{% url 'contact' %}"><span>contact</span></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="{% url 'resume' %}"><span>resume</span></a>
+                <li class="nav-list-item left-margin">
+                    <a class="navbar-link" href="{% url 'resume' %}"><span>resume</span></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item u-mrg-l-auto">
-                    <a class="c-nav-list__link" href="https://www.github.com/dnabulsi/"><img
+                <li class="nav-list-item right-link-navbar">
+                    <a class="navbar-link" href="https://www.github.com/dnabulsi/"><img
                             src="{% static 'media/github.svg' %}" width="20" height="20"></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="https://www.linkedin.com/in/dana-n-9b591282/"><img
+                <li class="nav-list-item left-margin">
+                    <a class="navbar-link" href="https://www.linkedin.com/in/dana-n-9b591282/"><img
                             src="{% static 'media/linkedin.svg' %}" width="20" height="20"></a>
                 </li>
-                <li class="c-nav-list__item o-flexy__item">
-                    <a class="c-nav-list__link" href="https://www.twitter.com/dtnabulsi"><img
+                <li class="nav-list-item left-margin">
+                    <a class="navbar-link" href="https://www.twitter.com/dtnabulsi"><img
                             src="{% static 'media/twitter.svg' %}" width="20" height="20"></a>
                 </li>
             </ul>
